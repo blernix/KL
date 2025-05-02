@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Bot, Zap, CalendarClock } from "lucide-react";
-import { AutomationsLinesBackground } from "@/components/backgrounds/AutomationCircuitBackground";
 
 export function Automations() {
   const features = [
@@ -10,19 +9,19 @@ export function Automations() {
       title: "Automatisations métier",
       icon: <Zap size={32} />,
       description:
-        "Gestion des emails, rappels, factures, notifications... tout est automatisé selon vos besoins.",
+        "Fini les tâches répétitives ! Rappels de rendez-vous, envois de factures, newsletters ou alertes... Je mets en place des automatisations qui gèrent pour vous. Vos clients sont informés et vous, vous vous concentrez sur l’essentiel.",
     },
     {
       title: "Agents IA intégrés",
       icon: <Bot size={32} />,
       description:
-        "Des agents intelligents pour interpréter vos données, répondre à vos utilisateurs ou automatiser des décisions.",
+        "Besoin d’un assistant intelligent ? Je peux intégrer des agents IA capables de lire vos données, répondre automatiquement à vos clients, classer des messages ou même prendre des décisions simples à votre place.",
     },
     {
-      title: "Connexion aux outils",
+      title: "Connexion à tous vos outils",
       icon: <CalendarClock size={32} />,
       description:
-        "Google Agenda, Telegram, Stripe, API métier... votre écosystème devient fluide et sans friction.",
+        "Votre site, Google Agenda, vos paiements Stripe, Telegram... Je relie tout ça ensemble. Exemple : quand un client réserve un créneau, il reçoit automatiquement un email de confirmation, le RDV s'ajoute à votre agenda, et vous recevez une alerte sur Telegram. Zéro action manuelle.",
     },
   ];
 
@@ -32,16 +31,15 @@ export function Automations() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8 }}
-      className="relative py-16 px-6 bg-black text-white text-center overflow-hidden"
+      className="relative py-16 px-6  text-white text-center overflow-hidden"
     >
-      <AutomationsLinesBackground />
 
       <div className="relative z-10 container mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 via-rose-500 to-red-600 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
           Automatisations intelligentes
         </h2>
         <p className="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
-          Je conçois des workflows automatisés avec n8n pour que votre activité tourne toute seule. Vous gagnez du temps, vos clients aussi.
+        Fini les tâches répétitives : je crée des automatisations intelligentes qui relient vos outils et prennent le relais. Pendant que vous vous concentrez sur votre activité, vos mails partent, vos RDV se confirment et vos clients sont informés… automatiquement.
         </p>
 
         <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ParallaxText } from "../animations/ParallaxText";
-import { HeroGradientBackground } from "@/components/backgrounds/HeroGradientBackground";
 
 export function Hero() {
   return (
@@ -12,9 +11,8 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative flex flex-col items-center justify-center text-center min-h-[80vh] px-6 bg-black text-white overflow-hidden"
+        className="relative flex flex-col items-center justify-center text-center min-h-[80vh] px-6  text-white overflow-hidden"
       >
-        <HeroGradientBackground />
 
         <ParallaxText speed={0.3}>
           <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-400 via-gray-300 to-white text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,255,255,0.15)] relative z-10">

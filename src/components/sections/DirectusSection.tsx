@@ -2,27 +2,26 @@
 
 import { motion } from "framer-motion";
 import { ImageIcon, ShieldCheck, SlidersHorizontal } from "lucide-react";
-import { DirectusGridBackground } from "@/components/backgrounds/DirectusGridBackground";
 
 export function DirectusSection() {
   const features = [
     {
-      title: "Ajoutez du contenu vous-même",
+      title: "Mettez à jour votre site en toute simplicité",
       icon: <ImageIcon size={32} />,
       description:
-        "Gérez vos photos, textes, articles ou popups en toute autonomie via un tableau de bord simple et intuitif.",
+        "Ajoutez vos articles, photos, services ou annonces quand vous le souhaitez. Une interface intuitive vous permet de gérer votre contenu facilement, sans passer par un développeur.",
     },
     {
-      title: "Structure protégée",
+      title: "Une structure protégée, sans risques",
       icon: <ShieldCheck size={32} />,
       description:
-        "Contrairement à WordPress, vous ne touchez pas au squelette du site. Le design, le SEO et la performance restent optimaux.",
+        "Contrairement à WordPress, vous n'avez pas accès aux parties sensibles du site. Résultat : vous pouvez modifier votre contenu librement sans risquer de casser l’affichage ou le référencement.",
     },
     {
-      title: "Dashboard personnalisé",
+      title: "Un espace admin 100% adapté à votre besoin",
       icon: <SlidersHorizontal size={32} />,
       description:
-        "Je vous construis un espace d’administration sur mesure, avec uniquement ce que vous avez besoin de gérer. Rien de plus.",
+        "Votre tableau de bord ne contient que l’essentiel. Pas de menus inutiles ou d’options compliquées : vous voyez uniquement ce que vous avez besoin de gérer, rien de plus.",
     },
   ];
 
@@ -32,17 +31,17 @@ export function DirectusSection() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8 }}
-      className="relative py-16 px-6 bg-black text-white text-center overflow-hidden"
+      className="relative py-16 px-6  text-white text-center overflow-hidden"
     >
-      <DirectusGridBackground />
 
       <div className="relative z-10 container mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-slate-300 via-gray-200 to-white text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
           Gérer votre contenu facilement
         </h2>
         <p className="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
-          Grâce à une interface sur mesure, vous gardez le contrôle de votre site — sans prendre de risque.
-        </p>
+        Modifiez le contenu de votre site quand vous le souhaitez, sans jamais risquer de le dégrader.
+        Vous avez la liberté de gérer, sans la peur de tout casser.
+                </p>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}

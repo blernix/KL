@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ServicesGridBackground } from "@/components/backgrounds/ServicesGridBackground";
 
 const container = {
   hidden: {},
@@ -21,33 +20,33 @@ export function Services() {
   const services = [
     {
       title: "🌐 Sites vitrines professionnels",
-      description: "Présentez votre activité en ligne avec un site moderne et efficace.",
-      examples: "Idéal pour indépendants, PME, artisans, coachs, avocats...",
+      description:
+        "Vous avez besoin d’une présence simple et efficace sur le web pour présenter votre activité ? Je conçois pour vous un site sobre, rapide et parfaitement adapté à votre image. Idéal pour les indépendants, PME, artisans, coachs ou avocats.",
     },
     {
       title: "💻 Applications web sur mesure",
-      description: "Des outils adaptés à votre métier pour optimiser votre gestion.",
-      examples: "CRM, espace membre, automatisation, gestion d’agenda...",
+      description:
+        "Votre activité a besoin d’un outil plus spécifique ? Je développe des solutions adaptées à votre métier : gestion de contenu, planning, espace client… Tout est pensé pour vous faire gagner du temps au quotidien.",
     },
     {
       title: "🛒 E-commerce & solutions de vente",
-      description: "Vendez vos produits ou services en ligne avec des solutions performantes.",
-      examples: "Paiement Stripe, marketplace, dropshipping, abonnements...",
+      description:
+        "Vous souhaitez vendre en ligne ? Je mets en place des solutions modernes et efficaces pour accepter les paiements, gérer vos stocks ou encore proposer des abonnements. Le tout facilement gérable pour vous.",
     },
     {
       title: "⚙️ Automatisations sur mesure",
-      description: "Je connecte et automatise vos outils pour que tout fonctionne sans effort de votre part.",
-      examples: "Workflows personnalisés avec n8n, synchronisation, envois d'emails, alertes Telegram, etc.",
+      description:
+        "Gagnez du temps et limitez les tâches répétitives grâce à l’automatisation. J’interconnecte vos outils pour que certaines actions se fassent toutes seules : notifications, envois d’emails, synchronisation de données…",
     },
     {
       title: "📊 Dashboard client personnalisable",
-      description: "Vous accédez à une interface simple pour gérer votre contenu sans passer par un développeur.",
-      examples: "CMS via Directus avec rôles utilisateurs, gestion d’articles, services, RDV, images...",
+      description:
+        "Vous voulez gérer votre site sans m’appeler tous les jours ? Je vous propose un espace administrateur simple où vous pourrez ajouter vos articles, modifier vos services ou vos photos en toute autonomie.",
     },
     {
       title: "🔒 Hébergement & maintenance",
-      description: "Votre site est hébergé sur un serveur sécurisé avec maintenance incluse.",
-      examples: "Sur mon VPS (abonnement annuel), ou installation sur un serveur de votre choix (OVH, DigitalOcean...)",
+      description:
+        "Pas envie de vous occuper des aspects techniques ? Je peux héberger votre site sur mon serveur sécurisé avec maintenance incluse. Sinon, je peux aussi l’installer sur votre propre serveur (OVH, DigitalOcean…). À vous de choisir.",
     },
   ];
 
@@ -57,9 +56,8 @@ export function Services() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={container}
-      className="relative py-16 px-6 bg-black text-white text-center overflow-hidden"
+      className="relative py-16 px-6 text-white text-center overflow-hidden"
     >
-      <ServicesGridBackground />
 
       <motion.div variants={item} className="relative z-10 container mx-auto max-w-5xl">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-400 via-gray-300 to-white text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,255,255,0.15)]">
@@ -82,7 +80,6 @@ export function Services() {
           >
             <h3 className="text-xl font-semibold text-white">{service.title}</h3>
             <p className="text-gray-400 mt-2">{service.description}</p>
-            <p className="text-gray-500 text-sm mt-2 italic">{service.examples}</p>
           </motion.div>
         ))}
       </motion.div>

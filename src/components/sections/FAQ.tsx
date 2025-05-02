@@ -15,7 +15,7 @@ export function FAQ() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8 }}
-      className="py-16 px-6 bg-black text-white text-center"
+      className="py-16 px-6  text-white text-center"
     >
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 via-rose-500 to-red-600 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,255,255,0.15)]">

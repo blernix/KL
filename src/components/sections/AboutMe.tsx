@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AboutMeGlowBackground } from "@/components/backgrounds/AboutMeGlowBackground";
 
 export function AboutMe() {
   return (
@@ -10,9 +9,8 @@ export function AboutMe() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true, amount: 0.2 }}
-      className="relative py-16 px-6 text-center bg-black text-white overflow-hidden"
+      className="relative py-16 px-6 text-center  text-white overflow-hidden"
     >
-      <AboutMeGlowBackground />
 
       <div className="relative z-10 container mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-400 via-gray-300 to-white text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,255,255,0.15)]">
